@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!-- boostrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- fontawsome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <!-- css link -->
+      <link rel="stylesheet" href="./ecommerce.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img style="width: 100px;" src="./Etsy-logo-removebg-preview.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="d-flex ms-sm-5 justify-content-center mt-2" role="search">
+            <input style="width: 300px;" class="form-control me-1 rounded-5 border-black " type="search" placeholder="Search for anything" aria-label="Search">
+            <button class="btn btn-outline-success bg-danger text-light rounded-5" type="submit">Search</button>
+          </form>
+          <button type="button" class="btn btn-info rounded-5 border-black mt-2 ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Sign in
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+              <li class="d-flex justify-content-center align-items-center nav-item">
+                <a class="nav-link me-4" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#">Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#">Cart</a>
+              </li>
+              <li class="nav-item dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Home</a></li>
+                  <li><a class="dropdown-item" href="#">Explore</a></li>
+                  <li><a class="dropdown-item" href="#">Categories</a></li>
+                  <li><a class="dropdown-item" href="#">Account</a></li>
+                  <li><a class="dropdown-item" href="#">Cart</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="card text-center m-md-2">
+        <div class="card-header fw-bolder">
+          TOP SELECTIONS
+        </div>
+        <div class="card-body">
+          <h5 class="card-title fw-bolder text-body-emphasis">Small shops make every moment more special!</h5>  
+          
+          <div class="card-body d-flex justify-content-center gap-4 flex-wrap">
+            <a href="#" class="card rounded-5 border-dark border-5 bg-body-secondary shadow btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" style="width: 18rem;">
+              <img src="./gift for dad.avif" class="card-img-top rounded-5" alt="...">
+              <div class="card-body">
+                <div class="btn text-secondary p-1 m-0 "><h5 class="card-title">Gift for Dad</h5></div>
+              </div>
+            </a>
+
+<!-- modal front -->
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Gift Box-Hammer</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./dads gift1.webp" alt="">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Next item</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal back -->
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Gift Box-measuring tap</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./dads gift2.webp" alt="">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Buy</button>
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <div class="card rounded-5 border-dark border-5 bg-body-secondary shadow" style="width: 18rem;">
+              <img src="./greeting cards.avif" class="card-img-top rounded-5" alt="...">
+              <div class="card-body">
+                <a href="#" class="btn text-secondary p-1 m-0"><h5 class="card-title">Greeting Cards</h5></a>
+              </div>
+            </div>
+            <div class="card rounded-5 border-dark border-5 bg-body-secondary shadow" style="width: 18rem;">
+              <img src="./kids activities.avif" class="card-img-top rounded-5" alt="...">
+              <div class="card-body">
+                <a href="#" class="btn text-secondary p-1 m-0"><h5 class="card-title">Kids Activities</h5></a>
+              </div>
+            </div>
+            <div class="card rounded-5 border-dark border-5 bg-body-secondary shadow" style="width: 18rem;">
+              <img src="./summer clothing.avif" class="card-img-top rounded-5" alt="...">
+              <div class="card-body">
+                <a href="#" class="btn text-secondary p-1 m-0"><h5 class="card-title">Summer Clothing</h5></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card-footer text-body-secondary">
+        </div>
+      </div>
+      
+      <!-- collaps -->
+      <!-- <div class="bg-success-emphasis">
+        <h2 class="text-center pt-5 ">What is Etsy India?</h2>
+        <div class="m-3">
+          <div class="cola w-50 ms-auto me-auto">
+            <p class="d-inline-flex gap-1">
+              <a class="btn btn-button fw-bolder" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Why choose Etsy?                             v
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body b">
+                A community doing good Etsy is where people come together to make, sell, buy, and collect unique items. We’re also a community pushing for positive change for small businesses, people, and the planet. Here are some of the ways we’re making a positive impact, together:
+                Your purchases on Etsy in 2021 generated nearly $4 billion in income for small businesses.
+                We advocate for policy—at the global and local level—that benefits creative entrepreneurs and helps small businesses grow and thrive.
+                We are deepening our commitment to a sustainable future and are working towards a new goal to reach net zero emissions by 2030.
+                Support independent creators There’s no Etsy warehouse—just millions of people selling the things they love. We make the whole process easy, helping you connect directly with talented artisans from across the world (including India) to find something extraordinary.
+                Peace of mind With Etsy Purchase Protection, you can shop confidently, knowing if something goes wrong with your order, we’ve got your back for all eligible purchases. If you ever need assistance, we are always ready to step in for support.
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="cola w-50 ms-auto me-auto">
+            <p class="d-inline-flex gap-1">
+              <a class="btn btn-button fw-bolder" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                What can you shop on Etsy?                     v
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                A community doing good Etsy is where people come together to make, sell, buy, and collect unique items. We’re also a community pushing for positive change for small businesses, people, and the planet. Here are some of the ways we’re making a positive impact, together:
+                Your purchases on Etsy in 2021 generated nearly $4 billion in income for small businesses.
+                We advocate for policy—at the global and local level—that benefits creative entrepreneurs and helps small businesses grow and thrive.
+                We are deepening our commitment to a sustainable future and are working towards a new goal to reach net zero emissions by 2030.
+                Support independent creators There’s no Etsy warehouse—just millions of people selling the things they love. We make the whole process easy, helping you connect directly with talented artisans from across the world (including India) to find something extraordinary.
+                Peace of mind With Etsy Purchase Protection, you can shop confidently, knowing if something goes wrong with your order, we’ve got your back for all eligible purchases. If you ever need assistance, we are always ready to step in for support.
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="cola w-50 ms-auto me-auto">
+            <p class="d-inline-flex gap-1">
+              <a class="btn btn-button fw-bolder" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                How to buy on Etsy?                             v
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                If you’re looking for something specific, start by putting in the keywords in our search and then using filters to narrow down the results. You can even message the sellers with any questions or requests you may have before placing an order with them. If you’re looking for inspiration, head on over to our Editor’s Picks or look out for the latest updates on our Journal to discover extraordinary items.
+              </div>
+            </div>
+          </div>
+      </div> -->
+
+      <!-- float -->
+      <div class="p-3 bg-info">
+        <h5 class="text-center mb-3">Yes! Send me exclusive offers, unique gift ideas, and personalised tips for shopping and selling on Etsy.</h5>
+       <div>
+        <div class="form-floating d-flex justify-content-center ms-auto me-auto w-50">
+          <input type="email" class="form-control shadow" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Enter your Email</label>
+        </div>
+       </div>
+      </div>
+
+    
+
+<!-- Modal -->
+<div class="modal fade m-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <footer>
+        <div class="container-fluid bg-secondary text-light m-0">
+            <div class="row margin p-5">
+              <div class="col-lg-12 pb-4 text-center text-dark fw-bolder"><img class="me-3  " style="width: 40px;" src="./ele.logo.svg" alt="">Etsy is powered by 100% renewable electricity.</div>
+                <div class="col-lg-4 bg-gradient rounded-3 text-black p-5 text-center shadow flex-lg-wrap">
+                    <div><img class="shadow" style="width: 70px;" src="./etsy logo.jfif" alt=""></div>
+                    <div><button class="btn btn-outline-success bg-primary text-light rounded-5 mt-4 shadow" type="submit">Download Etsy App</button></div>
+
+                </div>
+                <div class="col-md-3 mt-3 ps-5">
+                     <h5 class="text-dark fw-bolder">Shops</h5>
+                     <ul class="list-unstyled mt-4">
+                        <li><a href class="text-decoration-none text-light hvr">Gift cards</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Etsy Registry</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Site map</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Etsy blog</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Etsy United kingdom</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Etsy canada</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Etsy Germany</a></li>
+                     </ul>
+                </div>
+                <div class="col-md-3 mt-3 ps-5 ">
+                    <h5 class="text-dark fw-bolder">Sell</h5>
+                    <ul class="list-unstyled mt-4">
+                        <li><a href class="text-decoration-none text-light hvr">Sell on Etsy</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Teams</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Forums</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Affiliates&creators</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mt-3 ps-5">
+                    <h5 class="text-dark fw-bolder">Abouts</h5>
+                    <ul class="list-unstyled mt-4">
+                        <li><a href class="text-decoration-none text-light hvr">Etsy, Inc.</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Policies</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Investors</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Careers</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Press</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Impact</a></li>
+                        <li><a href class="text-decoration-none text-light hvr">Legal imprint</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" ></script> -->
+
+</html>
